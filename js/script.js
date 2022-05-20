@@ -235,22 +235,22 @@ const getAndSetRootDark = function () {
 
 const theme = function (device) {
   if (dark.classList.contains('hidden')) {
-    header.style.backgroundImage = `url('../../images/bg-${device}-dark.jpg')`;
+    header.style.backgroundImage = `url('images/bg-${device}-dark.jpg')`;
   }
   dark.onclick = function () {
     if (!dark.classList.contains('hidden')) {
-      header.style.backgroundImage = `url('../../images/bg-${device}-dark.jpg')`;
+      header.style.backgroundImage = `url('images/bg-${device}-dark.jpg')`;
       dark.classList.add('hidden');
       light.classList.remove('hidden');
       getAndSetRootDark();
     }
   };
   if (light.classList.contains('hidden')) {
-    header.style.backgroundImage = `url('../../images/bg-${device}-light.jpg')`;
+    header.style.backgroundImage = `url('images/bg-${device}-light.jpg')`;
   }
   light.onclick = function () {
     if (!light.classList.contains('hidden')) {
-      header.style.backgroundImage = `url('../../images/bg-${device}-light.jpg')`;
+      header.style.backgroundImage = `url('images/bg-${device}-light.jpg')`;
       dark.classList.remove('hidden');
       light.classList.add('hidden');
       getAndSetRoot();
