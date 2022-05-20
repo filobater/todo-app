@@ -17,7 +17,4 @@
 /design
 /node_modules
 /sass
-.style-guide.md
-.style-guide.md
-.README.md
-.README-template.md
+*.md
