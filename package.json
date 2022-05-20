@@ -1,0 +1,20 @@
+{
+  "name": "Mirko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass:css",
+    "devserver": "live-server",
+    "start": " npm-run-all --parallel devserver watch",
+    "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 10 versions",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.8"
+  }
+}
